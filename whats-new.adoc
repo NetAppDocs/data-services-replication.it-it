@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, releases' 
+summary: Scopri le novità di NetApp Replication. 
+---
+= Novità di NetApp Replication
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri le novità di NetApp Replication.
+
+
+
+== 06 ottobre 2025
+
+
+
+=== La BlueXP replication è ora NetApp Replication
+
+La BlueXP replication è stata rinominata NetApp Replication.
+
+
+
+=== BlueXP è ora NetApp Console
+
+NetApp Console, basata sulle fondamenta BlueXP migliorate e ristrutturate, offre una gestione centralizzata dello storage NetApp e dei NetApp Data Services in ambienti on-premise e cloud di livello aziendale, offrendo informazioni in tempo reale, flussi di lavoro più rapidi e un'amministrazione semplificata, il tutto in modo altamente sicuro e conforme.
+
+Per i dettagli su cosa è cambiato, vederelink:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["Note sulla versione della console NetApp"] .
+
+
+
+== 18 settembre 2022
+
+
+
+=== FSx per ONTAP su Cloud Volumes ONTAP
+
+Ora puoi replicare i dati da un file system Amazon FSx for ONTAP a Cloud Volumes ONTAP.
+
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Scopri come impostare la replica dei dati"] .
+
+
+
+== 31 luglio 2022
+
+
+
+=== FSx per ONTAP come fonte dati
+
+Ora puoi replicare i dati da un file system Amazon FSx for ONTAP alle seguenti destinazioni:
+
+* Amazon FSx per ONTAP
+* Cluster ONTAP on-premise
+
+
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Scopri come impostare la replica dei dati"] .
+
+
+
+== 02 settembre 2021
+
+
+
+=== Supporto per Amazon FSx per ONTAP
+
+Ora puoi replicare i dati da un sistema Cloud Volumes ONTAP o da un cluster ONTAP locale su un file system Amazon FSx for ONTAP .
+
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Scopri come impostare la replica dei dati"] .
+
+
+
+== 05 maggio 2021
+
+
+
+=== Interfaccia ridisegnata
+
+Abbiamo riprogettato Replication per semplificarne l'utilizzo e per adattarlo all'aspetto attuale dell'interfaccia utente.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-replication/main/media/replication.gif["Uno screenshot della scheda Replica riprogettata che mostra un elenco delle relazioni tra volumi."]

@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: concept-replication-policies.html 
+keywords: replication policy, policy, replication, replicating, snapmirror, snapvault, data replication, disaster recovery, DR 
+summary: Potrebbe essere necessario aiuto per scegliere una policy di replicazione quando si imposta la replicazione dei dati in NetApp Console.  Una policy di replicazione definisce il modo in cui il sistema di archiviazione replica i dati da un volume di origine a un volume di destinazione. 
+---
+= Scopri di più sulle policy di replica utilizzate in NetApp Replication
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Potrebbe essere necessario aiuto per scegliere una policy di replicazione quando si imposta la replicazione dei dati in NetApp Replication.  Una policy di replicazione definisce il modo in cui il sistema di archiviazione replica i dati da un volume di origine a un volume di destinazione.
+
+
+
+== Quali politiche di replicazione
+
+Il sistema operativo ONTAP crea automaticamente dei backup denominati copie snapshot.  Una copia snapshot è un'immagine di sola lettura di un volume che cattura lo stato del file system in un determinato momento.
+
+Quando si replicano dati tra sistemi, si replicano copie snapshot da un volume di origine a un volume di destinazione.  Una policy di replicazione specifica quali copie snapshot replicare dal volume di origine al volume di destinazione.
+
+
+TIP: Le policy di replicazione sono anche chiamate policy di _protezione_ perché sono basate sulle tecnologie SnapMirror e SnapVault , che forniscono protezione contro il disaster recovery e backup e ripristino da disco a disco.
+
+L'immagine seguente mostra la relazione tra copie snapshot e policy di replica:
+
+image:diagram_replication_policies.png["Questa illustrazione mostra le copie snapshot su un volume di origine e una policy di replica che specifica la replica di tutte o di specifiche copie snapshot dal volume di origine al volume di destinazione."]
+
+
+
+== Tipi di policy di replicazione
+
+Esistono tre tipi di policy di replicazione:
+
+* Un criterio _Mirror_ replica le copie snapshot appena create su un volume di destinazione.
++
+È possibile utilizzare queste copie snapshot per proteggere il volume di origine in preparazione al ripristino di emergenza o per la replica dei dati una tantum.  È possibile attivare il volume di destinazione per l'accesso ai dati in qualsiasi momento.
+
+* Una policy di _Backup_ replica copie di snapshot specifiche su un volume di destinazione e in genere le conserva per un periodo di tempo più lungo rispetto a quanto faresti sul volume di origine.
++
+È possibile ripristinare i dati da queste copie snapshot quando vengono danneggiati o persi e conservarli per motivi di conformità agli standard e per altri scopi legati alla governance.
+
+* Una politica di _Mirror e Backup_ garantisce sia il ripristino di emergenza che la conservazione a lungo termine.
++
+Ogni sistema include una policy predefinita di Mirror e Backup, che funziona bene in molte situazioni.  Se hai bisogno di policy personalizzate, puoi crearne di tue utilizzando System Manager.
+
+
+
+Le immagini seguenti mostrano la differenza tra i criteri Mirror e Backup.  Un criterio Mirror esegue il mirroring delle copie snapshot disponibili sul volume di origine.
+
+image:diagram_replication_snapmirror.png["Questa illustrazione mostra le copie snapshot su un volume di origine e un volume di destinazione Mirror che rispecchia il volume di origine."]
+
+In genere, un criterio di backup conserva le copie degli snapshot per un periodo di tempo più lungo rispetto a quello in cui vengono conservate sul volume di origine:
+
+image:diagram_replication_snapvault.png["Questa illustrazione mostra copie snapshot su un volume di origine e un volume di destinazione di backup che include più copie snapshot perché SnapVault conserva le copie snapshot per la conservazione a lungo termine."]
