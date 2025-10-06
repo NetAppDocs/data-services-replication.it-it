@@ -1,10 +1,10 @@
-= FSx per ONTAP come fonte dati
+= FSx per ONTAP come fonte di dati
 :allow-uri-read: 
 
 
 
 
-=== FSx per ONTAP come fonte dati
+=== FSx per ONTAP come fonte di dati
 
 Ora puoi replicare i dati da un file system Amazon FSx for ONTAP alle seguenti destinazioni:
 

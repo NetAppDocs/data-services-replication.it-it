@@ -18,15 +18,15 @@ NetApp SnapMirror replica i dati ad alta velocità su LAN o WAN, garantendo un'e
 
 
 
-== Console NetApp
+== NetApp Console
 
-È possibile accedere a NetApp Replication tramite la console NetApp .
+È possibile accedere a NetApp Replication tramite la NetApp Console.
 
 NetApp Console offre una gestione centralizzata dei servizi di storage e dati NetApp in ambienti on-premise e cloud di livello aziendale. La console è necessaria per accedere e utilizzare i servizi dati NetApp . In quanto interfaccia di gestione, consente di gestire numerose risorse di archiviazione da un'unica interfaccia. Gli amministratori della console possono controllare l'accesso allo storage e ai servizi per tutti i sistemi all'interno dell'azienda.
 
 Per iniziare a utilizzare NetApp Console non è necessaria una licenza o un abbonamento e verranno addebitati costi solo quando sarà necessario distribuire gli agenti della console nel cloud per garantire la connettività ai sistemi di storage o ai servizi dati NetApp . Tuttavia, alcuni servizi dati NetApp accessibili dalla Console sono concessi in licenza o basati su abbonamento.
 
-Scopri di più su https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["Console NetApp"] .
+Scopri di più su https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp Console"] .
 
 
 
@@ -41,7 +41,7 @@ Scopri di più su https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overv
 
 == Costo
 
-NetApp non addebita alcun costo per l'utilizzo NetApp Replication, ma è necessario verificare con il proprio provider cloud i costi applicabili per l'ingresso e l'uscita dei dati.
+NetApp non addebita alcun costo per l'utilizzo NetApp Replication, ma dovrai verificare con il tuo provider cloud i costi applicabili per l'ingresso e l'uscita dei dati.
 
 
 
@@ -103,7 +103,7 @@ NetApp Replication supporta configurazioni di protezione dei dati semplici, fano
 
 == Replicare i dati utilizzando NetApp Backup and Recovery
 
-A partire dalla versione 3.9.31 dell'agente NetApp Console, NetApp Backup and Recovery consente di replicare i dati tra volumi su sistemi ONTAP separati utilizzando le tecnologie SnapMirror e SnapVault .  Quindi, se si prevede di replicare i dati su altri sistemi ONTAP e si desidera anche creare backup degli stessi dati su un archivio di oggetti, è possibile utilizzare https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup e ripristino NetApp"^] in modo da poter gestire le tue esigenze di protezione dei dati con un unico servizio.
+A partire dalla versione 3.9.31 dell'agente NetApp Console , NetApp Backup and Recovery consente di replicare i dati tra volumi su sistemi ONTAP separati utilizzando le tecnologie SnapMirror e SnapVault .  Quindi, se si prevede di replicare i dati su altri sistemi ONTAP e si desidera anche creare backup degli stessi dati su un archivio di oggetti, è possibile utilizzare https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["NetApp Backup and Recovery"^] in modo da poter gestire le tue esigenze di protezione dei dati con un unico servizio.
 
 Attualmente, la seguente funzionalità è supportata solo in NetApp Replication e non quando si utilizza la funzionalità di replica di NetApp Backup and Recovery.
 

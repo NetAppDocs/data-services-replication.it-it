@@ -54,7 +54,7 @@ Requisiti specifici per i cluster ONTAP::
 +
 --
 * È necessario installare una licenza SnapMirror attiva.
-* Se il cluster si trova nei tuoi locali, dovresti avere una connessione dalla tua rete aziendale alla tua rete virtuale nel cloud. In genere si tratta di una connessione VPN.
+* Se il cluster si trova nei tuoi locali, dovresti avere una connessione dalla tua rete aziendale alla tua rete virtuale nel cloud.  In genere si tratta di una connessione VPN.
 * I cluster ONTAP devono soddisfare requisiti aggiuntivi relativi a subnet, porte, firewall e cluster.
 +
 https://docs.netapp.com/us-en/ontap/peering/prerequisites-cluster-peering-reference.html#connectivity-requirements["Visualizza i prerequisiti per il peering dei cluster nella documentazione ONTAP"^]
@@ -76,7 +76,7 @@ Requisiti specifici di Amazon FSx per ONTAP::
 
 == Fase 2: replicare i dati tra i sistemi
 
-È possibile replicare i dati scegliendo una replica dati una tantum, che può aiutare a spostare i dati da e verso il cloud, oppure una pianificazione ricorrente, che può facilitare il ripristino di emergenza o la conservazione a lungo termine.
+È possibile replicare i dati scegliendo una replica una tantum, che può aiutare a spostare i dati da e verso il cloud, oppure una pianificazione ricorrente, che può facilitare il ripristino di emergenza o la conservazione a lungo termine.
 
 .Passi
 . Dal menu di navigazione, seleziona *Archiviazione > Gestione*.

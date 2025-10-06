@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Documentazione sulla replicazione NetApp
+  title: Documentazione NetApp Replication
   summary: Replicare i dati tra i sistemi di archiviazione ONTAP per supportare il
     backup e il ripristino di emergenza sul cloud o tra cloud.
   keywords: replicate, storage systems, disaster recovery, cloud
@@ -19,9 +19,9 @@ indexpage:
       url: task-managing-replication.html
   - title: Blog e comunità
     links:
-    - title: Console NetApp
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: Servizi dati NetApp
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: Comunità NetApp
       url: https://community.netapp.com
