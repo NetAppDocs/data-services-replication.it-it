@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-backup-policies.html 
 keywords: snapvault, archive, archiving, retention, replication, snapshots, volumes 
-summary: A differenza dei criteri Mirror, i criteri Backup SnapVault replicano copie snapshot specifiche su un volume di destinazione.  È importante comprendere come funzionano i criteri di backup se si desidera utilizzare i propri criteri anziché quelli predefiniti. 
+summary: A differenza delle policy di Mirror, le policy di backup SnapVault replicano specifiche copie snapshot su un volume di destinazione. È importante capire come funzionano le policy di backup se vuoi usare le tue policy invece di quelle predefinite. 
 ---
 = Scopri di più sulle policy di backup utilizzate in NetApp Replication
 :hardbreaks:
@@ -23,11 +23,11 @@ A differenza delle policy Mirror, le policy di backup (SnapVault) replicano copi
 
 Un criterio di snapshot definisce il modo in cui il sistema crea copie snapshot dei volumi.  La policy specifica quando creare le copie snapshot, quante copie conservare e come etichettarle.  Ad esempio, un sistema potrebbe creare una copia snapshot ogni giorno alle 00:10, conservare le due copie più recenti ed etichettarle come "giornaliere".
 
-Una policy di backup include regole che specificano quali copie snapshot etichettate replicare su un volume di destinazione e quante copie conservare.  Le etichette definite in un criterio di backup devono corrispondere a una o più etichette definite in un criterio di snapshot.  In caso contrario, il sistema non potrà replicare alcuna copia snapshot.
+Una policy di backup include regole che specificano quali copie snapshot etichettate replicare in un volume di destinazione e quante copie conservare. Le etichette definite in una policy di backup devono corrispondere a una o più etichette definite in una policy di snapshot. Altrimenti, il sistema non può replicare alcuna copia snapshot.
 
-Ad esempio, un criterio di backup che include le etichette "giornaliero" e "settimanale" determina la replica di copie snapshot che includono solo tali etichette.  Non vengono replicate altre copie snapshot, come mostrato nell'immagine seguente:
+Ad esempio, una policy di backup che include le etichette "daily" e "weekly" comporta la replica di copie snapshot che includono solo tali etichette. Nessun'altra copia snapshot viene replicata, come mostrato nell'immagine seguente:
 
-image:diagram_replication_snapvault_policy.png["Un'illustrazione che mostra una policy di snapshot, un volume di origine, le copie snapshot create dalla policy di snapshot e la successiva replica di tali copie snapshot su un volume di destinazione in base a una policy di backup che specifica la replica delle copie snapshot con le etichette \"daily\" e \"weekly\""]
+image:diagram_replication_snapvault_policy.png["Un'illustrazione che mostra una policy di snapshot, un volume di origine, le copie snapshot create in base alla policy di snapshot e la successiva replica di tali copie snapshot su un volume di destinazione in base a una policy di backup, che specifica la replica delle copie snapshot con le etichette \"daily\" e \"weekly\""]
 
 
 
@@ -36,6 +36,6 @@ image:diagram_replication_snapvault_policy.png["Un'illustrazione che mostra una 
 
 Il criterio di snapshot predefinito crea copie di snapshot orarie, giornaliere e settimanali, conservando sei copie di snapshot orarie, due giornaliere e due settimanali.
 
-È possibile utilizzare facilmente un criterio di backup predefinito con il criterio di snapshot predefinito.  I criteri di backup predefiniti replicano copie snapshot giornaliere e settimanali, conservando sette copie snapshot giornaliere e 52 copie snapshot settimanali.
+Puoi facilmente usare una policy di backup predefinita con la policy di snapshot predefinita. Le policy di backup predefinite replicano le copie snapshot giornaliere e settimanali e conservano 7 copie snapshot giornaliere e 52 copie snapshot settimanali.
 
 Se si creano policy personalizzate, le etichette definite da tali policy devono corrispondere.  È possibile creare policy personalizzate utilizzando System Manager.
