@@ -18,6 +18,7 @@ Utilizzando NetApp Replication, è possibile replicare i dati tra i sistemi ONTA
 
 
 
+[[step-1-review-data-replication-requirements]]
 == Fase 1: rivedere i requisiti di replicazione dei dati
 
 Prima di poter replicare i dati, è necessario verificare che siano soddisfatti i requisiti specifici per Cloud Volumes ONTAP, i cluster ONTAP locali o Amazon FSx for ONTAP.
@@ -25,10 +26,10 @@ Prima di poter replicare i dati, è necessario verificare che siano soddisfatti 
 sistemi:: Se non lo hai già fatto, devi creare i sistemi per l'origine e la destinazione nella relazione di replica dei dati.
 +
 --
-* https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Creare un sistema Amazon FSx per ONTAP"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html["Creare un sistema Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Aggiungere sistemi Cloud Volumes ONTAP esistenti"^]
-* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Scopri i cluster ONTAP"^]
+* https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/task-getting-started-fsx.html["Creare un sistema Amazon FSx per ONTAP"^]
+* https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-overview-cvo.html["Creare un sistema Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-adding-systems.html["Aggiungere sistemi Cloud Volumes ONTAP esistenti"^]
+* https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["Scopri i cluster ONTAP"^]
 
 
 --
@@ -74,6 +75,7 @@ Requisiti specifici di Amazon FSx per ONTAP::
 
 
 
+[[step-2-replicate-data-between-systems]]
 == Fase 2: replicare i dati tra i sistemi
 
 È possibile replicare i dati scegliendo una replica una tantum, che può aiutare a spostare i dati da e verso il cloud, oppure una pianificazione ricorrente, che può facilitare il ripristino di emergenza o la conservazione a lungo termine.

@@ -1,0 +1,12 @@
+= Gestione della replica per le relazioni esistenti con FSx per ONTAP
+:allow-uri-read: 
+
+
+
+
+[[replication-management-for-existing-relationships-with-fsx-for-ontap]]
+=== Gestione della replica per le relazioni esistenti con FSx per ONTAP
+
+La gestione delle relazioni di replica per i file system FSx for ONTAP, sia come origine che come destinazione, è ora disponibile in NetApp Workload Factory.
+
+link:https://docs.netapp.com/us-en/data-services-replication/task-managing-replication.html["Gestire la replicazione dei dati"]

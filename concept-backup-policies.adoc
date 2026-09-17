@@ -18,6 +18,7 @@ A differenza delle policy Mirror, le policy di backup (SnapVault) replicano copi
 
 
 
+[[understanding-the-relationship-between-snapshot-copy-labels-and-backup-policies]]
 == Comprensione della relazione tra etichette di copia snapshot e criteri di backup
 
 Un criterio di snapshot definisce il modo in cui il sistema crea copie snapshot dei volumi.  La policy specifica quando creare le copie snapshot, quante copie conservare e come etichettarle.  Ad esempio, un sistema potrebbe creare una copia snapshot ogni giorno alle 00:10, conservare le due copie più recenti ed etichettarle come "giornaliere".
@@ -30,6 +31,7 @@ image:diagram_replication_snapvault_policy.png["Questa illustrazione mostra un c
 
 
 
+[[default-policies-and-custom-policies]]
 == Criteri predefiniti e criteri personalizzati
 
 Il criterio di snapshot predefinito crea copie di snapshot orarie, giornaliere e settimanali, conservando sei copie di snapshot orarie, due giornaliere e due settimanali.

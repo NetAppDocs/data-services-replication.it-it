@@ -18,6 +18,7 @@ Potrebbe essere necessario aiuto per scegliere una policy di replicazione quando
 
 
 
+[[what-replication-policies-do]]
 == Quali politiche di replicazione
 
 Il sistema operativo ONTAP crea automaticamente dei backup denominati copie snapshot.  Una copia snapshot è un'immagine di sola lettura di un volume che cattura lo stato del file system in un determinato momento.
@@ -33,6 +34,7 @@ image:diagram_replication_policies.png["Questa illustrazione mostra le copie sna
 
 
 
+[[types-of-replication-policies]]
 == Tipi di policy di replicazione
 
 Esistono tre tipi di policy di replicazione:
