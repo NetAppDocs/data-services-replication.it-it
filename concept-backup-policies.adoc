@@ -27,7 +27,7 @@ Una policy di backup include regole che specificano quali copie snapshot etichet
 
 Ad esempio, un criterio di backup che include le etichette "giornaliero" e "settimanale" determina la replica di copie snapshot che includono solo tali etichette.  Non vengono replicate altre copie snapshot, come mostrato nell'immagine seguente:
 
-image:diagram_replication_snapvault_policy.png["Questa illustrazione mostra un criterio di snapshot, un volume di origine, le copie di snapshot create dal criterio di snapshot e quindi la replica di tali copie di snapshot su un volume di destinazione in base a un criterio di backup, che specifica la replica delle copie di snapshot con le etichette \"giornaliera\" e \"settimanale\""]
+image:diagram_replication_snapvault_policy.png["Un'illustrazione che mostra una policy di snapshot, un volume di origine, le copie snapshot create dalla policy di snapshot e la successiva replica di tali copie snapshot su un volume di destinazione in base a una policy di backup che specifica la replica delle copie snapshot con le etichette \"daily\" e \"weekly\""]
 
 
 

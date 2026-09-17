@@ -29,7 +29,7 @@ Per gestire le relazioni di replica con i file system FSx for ONTAP, dopo aver e
 . Esaminare lo stato delle relazioni di replicazione dei dati per verificare che siano integre.
 +
 
-NOTE: Se lo stato di una relazione è inattivo e lo stato mirror non è inizializzato, è necessario inizializzare la relazione dal sistema di destinazione affinché la replica dei dati avvenga secondo la pianificazione definita.  È possibile inizializzare la relazione utilizzando System Manager o l'interfaccia della riga di comando (CLI).  Questi stati possono verificarsi quando il sistema di destinazione si guasta e poi torna online.
+NOTE: Se lo stato di una relazione è inattivo e lo stato Mirror non è inizializzato, devi inizializzare la relazione dal sistema di destinazione affinché la replica dei dati avvenga secondo la pianificazione definita. Puoi inizializzare la relazione utilizzando System Manager o l'interfaccia a riga di comando (CLI). Questi stati possono verificarsi quando il sistema di destinazione si blocca e poi torna online.
 
 . Selezionare il menu delle azioni per una relazione di volume e scegliere una delle azioni disponibili.
 +
@@ -69,7 +69,12 @@ Scopri come eseguire una risincronizzazione inversa, che risincronizza i dati da
 | Aggiornamento | Avvia un trasferimento incrementale per aggiornare il volume di destinazione. 
 
 
-| Eliminare | Elimina la relazione di protezione dei dati tra i volumi di origine e di destinazione, il che significa che la replica dei dati non avviene più tra i volumi.  Questa azione non attiva il volume di destinazione per l'accesso ai dati. 
+| Eliminare  a| 
+Elimina la relazione di protezione dei dati tra il volume di origine e il volume di destinazione. In questo modo la replica dei dati tra i volumi viene interrotta, la relazione di SnapMirror viene eliminata dal sito di destinazione e viene rilasciata dal sito di origine.
+
+
+NOTE: L'eliminazione della relazione interrompe anche la relazione di SnapMirror, rendendo temporaneamente il volume di destinazione il sito primario per le operazioni di lettura/scrittura, in modo da garantire che la destinazione possa essere utilizzata in modo indipendente dopo la rimozione della replica.
+
 |===
 
 

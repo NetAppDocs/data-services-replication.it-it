@@ -20,9 +20,6 @@ Per accedere alla Console, puoi utilizzare le tue credenziali del sito di suppor
 
 .Passi
 . Apri un browser web e vai su https://console.netapp.com/["NetApp Console"^] .
-+
-Viene visualizzata la pagina di accesso NetApp Console .
-
 . Accedi alla Console.
 . Dal menu di navigazione a sinistra della Console, selezionare *Protezione* > *Replica*.
 
